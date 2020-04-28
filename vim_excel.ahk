@@ -11,12 +11,12 @@ GroupAdd Terminal, ahk_class VirtualConsoleClass  ; Cmder
     ; ESCキーが押下されたとき
     Esc::
         if(IME_GET()){
-            ; IME有効時 ECS→スリープ→IME無効
+            ; IME有効時 ESC→スリープ→IME無効
             Send, {ESC}
             Sleep 1
             IME_SET(0)
         } else {
-            ; IME無効時 ECS
+            ; IME無効時 ESC
             Send, {Esc}
         }
         return
@@ -24,12 +24,12 @@ GroupAdd Terminal, ahk_class VirtualConsoleClass  ; Cmder
     ; Ctrl + [ が押下されたとき
     ^[::
         if(IME_GET()){
-            ; IME有効時 ECS→スリープ→IME無効
+            ; IME有効時 ESC→スリープ→IME無効
             Send, {ESC}
             Sleep 1
             IME_SET(0)
         } else {
-            ; IME無効時 ECS
+            ; IME無効時 ESC
             Send, {Esc}
         }
         return
