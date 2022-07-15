@@ -2,6 +2,8 @@
 
 GroupAdd Terminal, ahk_class VTWin32  ; Tera Term
 GroupAdd Terminal, ahk_class VirtualConsoleClass  ; Cmder
+GroupAdd Terminal, ahk_class ConsoleWindowClass  ; Ubuntu
+;GroupAdd Terminal, ahk_class CASCADIA_HOSTING_WINDOW_CLASS  ; Windows Terminal
 
 GroupAdd MOffice, ahk_class XLMAIN  ; excel
 GroupAdd MOffice, ahk_class OpusApp  ; word
